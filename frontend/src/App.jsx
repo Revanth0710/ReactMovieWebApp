@@ -1,11 +1,23 @@
 
 import './App.css'
+import Favorites from './Pages/Favorities';
 import Home from './Pages/Home';  
+import { Routes, Route} from "react-router-dom"
+import NavBar from './Components/NavBar'; 
 
 function App() {
   
   return (
-    <Home />
+    <div>
+      <
+   
+    <main className='main-content'>
+      <Routes>
+        <Route path = "/" element ={<Home />} />
+        <Route path = "/favorities" element = {<Favorites />} />
+      </Routes>
+    </main>
+     </div>
   );
 }
 
