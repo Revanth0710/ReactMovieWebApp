@@ -1,6 +1,6 @@
 import MovieCard from "../Components/MovieCard"     
-
 import { useState } from "react";
+import "../CSS/Home.css"
 
 function Home(){
     // searchQuery, This is the current state value.
@@ -23,7 +23,6 @@ function Home(){
         setSearchQuery("")
 
     };
-
 
     return (
     <div className="home">
@@ -51,7 +50,7 @@ function Home(){
                 (movie) => 
                     (
                 
-                    <MovieCard movie ={movie} key ={movie.id} />
+                <MovieCard movie ={movie} key ={movie.id} />
                     //Displays a list/grid of MovieCard components, one for each movie in the array.
                     )
         )}
